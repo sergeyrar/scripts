@@ -1,3 +1,8 @@
+#!/bin/bash
+#
+# Script to find a the occurrences of a string in a tar.gz file (That itself might include more tar.gz...)
+# WARNING: This script will extract tar.gz archives and remove original tar.gz files.
+
 OUTPUT=$(find . | grep tar.gz)
 while [ -n "$OUTPUT" ]
 do
